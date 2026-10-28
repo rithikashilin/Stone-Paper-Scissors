@@ -1,0 +1,39 @@
+#gets the input from the user
+user_input=input("Options: Stone, Paper or Scissors\nEnter your choice: ").upper()
+print("User choice: ",user_input) #User choice displayed
+import random
+item=['STONE','PAPER','SCISSORS']
+#computer randomly chooses from the above option
+computer_input=random.choice(item)
+print("Computer choice: ",computer_input) #computer choice displayed
+
+if (user_input=='STONE'): #validating user input
+    #sets up another condition to check the computer input to do comparison and then prints the output accordingly
+    if (computer_input=='SCISSORS'):
+        print("Stone beats scissors")
+        print("User WON")
+    elif (computer_input=='PAPER'):
+        print("Paper beats Stone")
+        print("Computer WON")
+    elif (computer_input=='STONE'):
+        print("Draw")
+elif (user_input=='PAPER'):  #validating user input
+        #sets up another condition to check the computer input to do comparison and then prints the output accordingly
+    if (computer_input=='SCISSORS'):
+        print("Scissors beats Paper")
+        print("Computer WON")
+    elif (computer_input=='PAPER'):
+        print("Draw")
+    elif (computer_input=='STONE'):
+        print("Paper beats Stone")
+        print("User WON")
+else:  #validating user input
+        #sets up another condition to check the computer input to do comparison and then prints the output accordingly
+    if (computer_input=='SCISSORS'):
+        print("Draw")
+    elif (computer_input=='PAPER'):
+        print("Scissors beats Paper")
+        print("User WON")
+    elif (computer_input=='STONE'):
+        print("Stone beats scissors")
+        print("Computer WON")
