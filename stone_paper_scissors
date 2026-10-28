@@ -1,6 +1,7 @@
 #gets the input from the user
 user_input=input("Options: Stone, Paper or Scissors\nEnter your choice: ").upper()
 print("User choice: ",user_input) #User choice displayed
+
 import random
 item=['STONE','PAPER','SCISSORS']
 #computer randomly chooses from the above option
